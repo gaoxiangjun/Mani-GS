@@ -18,7 +18,7 @@
 
 This is the official implementation of 3D Gaussian manipulation for the paper *Mani-GS: Gaussian Splatting Manipulation with Triangular Mesh*.
 
-The code will be released in June. We are cleaning our code for better use and evaluation, please stay tuned. 
+**The code will be released in June.** We are cleaning our code for better use and evaluation, please stay tuned. 
 
 
 ![Alt text](assets/teaser.gif)
