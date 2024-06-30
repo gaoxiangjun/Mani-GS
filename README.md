@@ -111,13 +111,11 @@ NeRF Synthetic dataset:
 ```
 sh script/run_nerf_stage_1.sh # (optional)
 sh script/run_nerf_stage_2.sh # neus mesh as default
-sh script/run_nerf_demo.sh
 ```
 DTU data:
 ```
 sh script/run_dtu_stage_1.sh # (optional)
 sh script/run_dtu_stage_2.sh # poisson mesh as default
-sh script/run_dtu_demo.sh
 ```
 
 ## 💫 Manipulation
