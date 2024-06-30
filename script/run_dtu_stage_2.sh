@@ -10,6 +10,7 @@ python train.py --eval \
 -s ${root_dir}${i} \
 -t bind \
 -m output/DTU/${i}/3dgs-HP10-NeuMesh-val-list \
+-mt poi \
 --lambda_normal_render_depth 0.0 \
 --lambda_mask_entropy 0.1 \
 --lambda_depth 0 \
