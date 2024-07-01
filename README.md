@@ -39,12 +39,13 @@ We introduce a Gaussian-Mesh binding strategy with self-adaption for 3DGS manipu
 - [ ] Code Refactoring (now is also a little dirty, sorry for that). -->
 
 ## 🌟 Overview
-- [🛠️ Installation](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-todo)
-- [📦 Data preparation](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-main-results)
-- [🚀 Training and Evaluation](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#%EF%B8%8F-quick-start)
-- [💫 Manipulation](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-acknowledgement)
-- [👍 Acknowledgement](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-citation)
-- [📘 Citation](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-citation)
+- [🛠️ Installation](https://github.com/gaoxiangjun/Mani-GS?tab=readme-ov-file#%EF%B8%8F-installation)
+- [📦 Data preparation](https://github.com/gaoxiangjun/Mani-GS?tab=readme-ov-file#-data-preparation)
+- [🚀 Training and Evaluation](https://github.com/gaoxiangjun/Mani-GS?tab=readme-ov-file#-training-and-evaluation)
+- [💫 Manipulation](https://github.com/gaoxiangjun/Mani-GS?tab=readme-ov-file#-manipulation)
+- [👍 Acknowledgement](https://github.com/gaoxiangjun/Mani-GS?tab=readme-ov-file#-acknowledgement)
+- [📘 Citation](https://github.com/gaoxiangjun/Mani-GS?tab=readme-ov-file#-citation)
+
 
 ## 🛠️ Installation
 #### Clone this repo
