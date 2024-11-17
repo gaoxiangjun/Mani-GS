@@ -328,7 +328,7 @@ def training_report_fps(tb_writer, iteration, tb_dict, scene: Scene, renderFunc,
 
         for config in validation_configs:
             
-            scene.gaussians.set_precompute_global()
+            # scene.gaussians.set_precompute_global()
             torch.cuda.synchronize() 
             time_start = time.time()
 
