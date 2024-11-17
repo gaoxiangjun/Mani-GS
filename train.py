@@ -354,7 +354,7 @@ def training_report_fps(tb_writer, iteration, tb_dict, scene: Scene, renderFunc,
                 torch.cuda.synchronize() 
                 time_end = time.time() - time_start
                 fps = len(config['cameras']) / time_end
-                scene.gaussians.unset_precompute_global()
+                # scene.gaussians.unset_precompute_global()
 
                 
                 # print("\n[ITER {}] Evaluating {}: L1 {} PSNR {} FPS {}".format(iteration, config['name'], l1_test, psnr_test, fps))
