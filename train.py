@@ -257,7 +257,8 @@ def training(dataset: ModelParams, opt: OptimizationParams, pipe: PipelineParams
         box = torch.cat([gaussians.get_xyz.amin(dim=0)[None]-dilation, gaussians.get_xyz.amax(dim=0)[None]+dilation], dim=0)
         mesh = trimesh.load(mesh_path, force='mesh', skip_material=True, process=False)
         
-        DTU = True if "DTU" in args.model_path else False
+        
+        DTU = 'dtu' in args.source_path or 'DTU' in args.source_path #True
         if DTU:
             vertices, triangles = clean_mesh(mesh.vertices, mesh.faces, remesh=True, remesh_size=0.015)
             mesh.vertices = vertices
@@ -266,12 +267,15 @@ def training(dataset: ModelParams, opt: OptimizationParams, pipe: PipelineParams
         vertices = torch.tensor(mesh.vertices).cuda()
         triangles = torch.tensor(mesh.faces).cuda()
         
-        # from mesh import Mesh
+        
+        # # clean poi mesh        
         # inside_triangles = remove_outside_triangles(vertices, triangles, box)
+        # from mesh import Mesh, safe_normalize, dot
         # mesh_poi_clean = Mesh(v=vertices, f=inside_triangles, device='cuda')
-        # mesh_path = os.path.join(os.path.dirname(args.model_path), 'mesh_poi_clean.ply')
+        # mesh_path = os.path.join(args.model_path, 'eval', 'mesh_poi_clean.ply')
         # mesh_poi_clean.write_ply(mesh_path)
 
+        # clean poi mesh        
         from knn_cuda import KNN
         knn = KNN(k=1, transpose_mode=True)
         ref = gaussians.get_xyz[None]
@@ -292,9 +296,9 @@ def training(dataset: ModelParams, opt: OptimizationParams, pipe: PipelineParams
 
         from mesh import Mesh
         mesh_poi_clean = Mesh(v=vertices, f=valid_tri, device='cuda')
-        mesh_path = os.path.join(os.path.dirname(args.model_path), 'mesh_poi_clean.ply')
+        mesh_path = os.path.join(args.model_path, 'eval', 'mesh_poi_clean.ply')
         mesh_poi_clean.write_ply(mesh_path)
-
+        
     if args.type in ["normal"]:
         # mesh_path = os.path.join(args.model_path, "eval", "mesh_normal_refine_2.ply")
         mesh_path = os.path.join(os.path.dirname(args.model_path), "mesh_normal_refine.ply")
