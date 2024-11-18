@@ -9,7 +9,6 @@ python train.py \
 -s ${root_dir}${i} \
 -t render \
 -m output/NeRF_Syn/${i}/3dgs \
--c output/NeRF_Syn/${i}/3dgs/chkpnt30000.pth \
 --iteration 30000 \
 --lambda_normal_render_depth 0.01 \
 --lambda_mask_entropy 0.1 \
