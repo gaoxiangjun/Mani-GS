@@ -51,6 +51,7 @@ def training(dataset: ModelParams, opt: OptimizationParams, pipe: PipelineParams
         mesh_path = os.path.join(os.path.dirname(args.model_path), '3dgs', 'eval', 'mesh_mc_30K.ply')
         gaussians.load_mesh(mesh_path)
     
+    densification_bind = True
     if args.type in ['bind', 'bind_mesh_adapt']:
         mesh_type_dict = {
             "neus": 'mesh_neus_decimate.ply',
