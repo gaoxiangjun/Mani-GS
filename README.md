@@ -1,4 +1,4 @@
-<h1 align="center">Mani-GS: Gaussian Splatting Manipulation with Triangular Mesh</h1>
+<h1 align="center">Mani-GS: Gaussian Splatting Manipulation with Triangular Mesh (CVPR 2025)</h1>
 
 <p align="center">
 <a href="" target="_blank">Xiangjun Gao<sup>1</sup></a>, 
@@ -23,6 +23,11 @@
 [![website](https://img.shields.io/badge/Project-Website-brightgreen)](https://gaoxiangjun.github.io/mani_gs)
 <!-- [![Twitter](https://img.shields.io/badge/Twitter-🔥%2036k%20views-b31b1b.svg?style=social&logo=twitter)](https://twitter.com/_akhaliq/status/1768484390873477480) <br> -->
 </h5>
+
+<h5 align="center">
+    <p><b>CVPR 2025</b></p>
+</h5>
+    
 
 🤗 This is the official implementation for the paper *Mani-GS: Gaussian Splatting Manipulation with Triangular Mesh*. 
 
