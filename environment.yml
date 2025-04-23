@@ -13,5 +13,5 @@ dependencies:
       - pillow==9.5.0
       - plyfile==0.9
       - scipy==1.7.3
-      - open3d-0.17.0
+      - open3d==0.17.0
       - pymeshlab==2022.2.post4
