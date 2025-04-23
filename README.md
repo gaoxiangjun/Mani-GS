@@ -69,6 +69,10 @@ pip install torch_scatter==2.1.1
 pip install kornia==0.6.12
 pip install imageio[ffmpeg]
 
+pip install PyMCubes
+pip install trimesh
+pip install ./submodules/simple-knn
+
 # install nvdiffrast=0.3.1
 git clone https://github.com/NVlabs/nvdiffrast
 pip install ./nvdiffrast
