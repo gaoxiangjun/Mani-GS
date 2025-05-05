@@ -88,7 +88,7 @@ pip install ./r3dg-rasterization
 
 ## 📦 Data preparation
 ####  NeRF Synthetic Dataset
-Download the NeRF synthetic dataset from [LINK](https://drive.google.com/drive/folders/1JDdLGDruGNXWnM1eqY1FNL9PlStjaKWi?usp=drive_link) provided by [NeRF](https://github.com/bmild/nerf).
+Download the NeRF synthetic dataset from [LINK](https://drive.google.com/file/d/1nWOQcIqVn7CZNJEZikVDB_06Sg12Ww3k/view?usp=drive_link) provided by [NeRF](https://github.com/bmild/nerf).
 
 #### DTU Dataset
 For real-world DTU data, we adopt the [Relightable3DGaussian](https://github.com/NJU-3DV/Relightable3DGaussian) pre-processed DTU data, which can be downloaded [here](https://box.nju.edu.cn/f/d9858b670ab9480fb526/?dl=1).  
