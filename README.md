@@ -88,7 +88,9 @@ pip install ./r3dg-rasterization
 
 ## 📦 Data preparation
 ####  NeRF Synthetic Dataset
-Download the NeRF synthetic dataset from [LINK](https://drive.google.com/file/d/1nWOQcIqVn7CZNJEZikVDB_06Sg12Ww3k/view?usp=drive_link) provided by [NeRF](https://github.com/bmild/nerf).
+Download the NeRF synthetic dataset from [LINK](
+https://drive.google.com/drive/folders/1JDdLGDruGNXWnM1eqY1FNL9PlStjaKWi?usp=drive_link
+) provided by [NeRF](https://github.com/bmild/nerf).
 
 #### DTU Dataset
 For real-world DTU data, we adopt the [Relightable3DGaussian](https://github.com/NJU-3DV/Relightable3DGaussian) pre-processed DTU data, which can be downloaded [here](https://box.nju.edu.cn/f/d9858b670ab9480fb526/?dl=1).  
@@ -116,7 +118,7 @@ The training is divided into two stages: (1) extracting the mesh from 3DGS using
 
 Stage 1 is optional, as we will provide the pre-extracted mesh using different methods. The evaluation will be conducted once the Stage 2 training is complete. Please note that this evaluation is only for static evaluation.
 
-We provide our extracted mesh using different methods, which can be downloaded from this Google drive [link](https://drive.google.com/file/d/1Ox0dhiKMfiLc5Rly01h0viJVCd2rHtcr/view?usp=drive_link). Please unzip it into `./output`
+We provide our extracted mesh using different methods, which can be downloaded from this Google drive [link](https://drive.google.com/file/d/1nWOQcIqVn7CZNJEZikVDB_06Sg12Ww3k/view?usp=drive_link). Please unzip it into `./output`
 
 NeRF Synthetic dataset:
 ```
